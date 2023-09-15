@@ -12,35 +12,38 @@ Reto del día : Hacer un programa para un restaurante donde el usuario pueda ele
 //Declaro funcion
 //Funcion es como crear una accion
 
-    
-function mealOne() {
-    const priceOne = 300;
-    console.log(priceOne);
-}
- function mealTwo() {
-    const priceTwo = 400;
-    console.log(priceTwo);
-}
-function mealThree() {
-    const priceThree = 500;
-    console.log(priceThree);
-}
-function mealFour() {
-    const priceFour = 600;
-    console.log(priceFour);
-}
-function mealFive() {
-    const priceFive = 700;
-    console.log(priceFive);
-}
-function mealSix() {
-    const priceSix = 800;
-    console.log(priceSix);
-    return priceSix;
+//Necesito un array para ir añadiendo los valores que me va a traer la funcion addMeal()
+
+let listMeal = [];
+function addMeal(price){ //le asigno el valor price a mi addMeal()
+    listMeal.push(price); //va a meterle a mi array el parametro precio
+    console.log(listMeal);
+     //borra o sobre escribe
+ //Funcion corta para que traigo los valores y los sume eso fue addMeal
 }
 
-function addMeal(){
-    let resultado = priceFive+priceFour;
-    console.log(resultado);
+//Ahora function total me va a mostrar el resultado
+
+function total(){ 
+    
+    let count = 0;
+    for (let i = 0; i < listMeal.length; i++){
+        
+        count = count+listMeal[i]; //Voy a sumar cada valor de listMeal, puedo sumar los valores por que list.Meal tiene los valores por ciclo que se escogieron por lo que esta cargado del valor
+        console.log(count);
+        
+        
+    }
+   
+
+    
+    
+    const total = document.getElementById("summary");
+    total.textContent = "Your bill is $" + count +".";
+    /*if(count.lenght > listMeal.length){
+        count*0;
+        listMeal*0;
+    }*/
+    
 }
 
