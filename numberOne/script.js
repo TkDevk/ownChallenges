@@ -19,6 +19,8 @@ function addMeal(price){ //le asigno el valor price a mi addMeal()
     listMeal.push(price); //va a meterle a mi array el parametro precio
     console.log(listMeal);
      //borra o sobre escribe
+
+     
  //Funcion corta para que traigo los valores y los sume eso fue addMeal
 }
 
@@ -28,7 +30,7 @@ function total(){
     
     let count = 0;
     for (let i = 0; i < listMeal.length; i++){
-        
+        // i recorre
         count = count+listMeal[i]; //Voy a sumar cada valor de listMeal, puedo sumar los valores por que list.Meal tiene los valores por ciclo que se escogieron por lo que esta cargado del valor
         console.log(count);
         
