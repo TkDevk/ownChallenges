@@ -41,8 +41,9 @@ button{
     background-color: brown;
     color: white;
     cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 25px;
 }
-
 section > article{
     margin-top: 20px;
     display: flex;
@@ -57,4 +58,53 @@ section > article{
     
     
     text-align: center;
+}
+img{
+    margin-top: 20px;
+    border-radius: 20px ;
+}
+
+#animation{
+
+    margin-top: 40px;
+}
+
+
+
+#animation::before{
+    content:'before';
+    background-color: red;
+    display: block;
+    height: 20px;
+    width: auto;
+   
+    
+}
+
+#animation::after{
+    content: 'after in block';
+    height: 20px;
+    width: auto;
+    background-color: rgba(9, 110, 144, 0.758);
+    display: block;
+}
+
+h1::before{
+    content:'';
+    height: 30px;
+    background: rgb(6, 93, 122);
+    width: 50px;
+    display: inline-block;
+    /*inline-block*/
+
+
+}
+
+h1::after{
+    content:'';
+    height: 30px;
+    background: rgb(6, 93, 122);
+    width: 50px;
+    display: inline-block;
+    
 }
