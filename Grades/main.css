@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none; /*Amcham*/
+}
+
+body > main > section > * {
+    height: 20px;
+    width: 50%;
+    border: 1px black solid;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+main > section {
+    margin: 20px 0 auto 40%;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#top-label{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    
+}
+
+label{
+    background-color: steelblue;
+    text-align: center;
+    border-style: outset;
+}
+
+button{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+article{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column; 
+    height: auto;
+    
+    
+}
+body > main > section > article > p{
+    
+       
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 25px;
+    border: none;
+
+
+}

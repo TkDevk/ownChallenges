@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/script.js"></script>>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+
+    <h1>Calculadora de Promedio de semestre</h1>
+    <main>
+        <h2> Ingrese las notas de primer, segundo y tercer corte </h2>
+        <!--Tres notas-->
+        <section>
+
+            <label id="top-label" for="nota1">Nota primer corte: </label>
+            <input type="text" id="nota1">
+            <label for="nota2"> Nota segundo corte: </label>
+            <input type="text" id="nota2">
+            <label for="nota3"> Nota tercer corte: </label>
+            <input type="text" id="nota3">
+            <button onclick="calcularPromedio()"> Calcular</button>
+            <article>
+                <button onclick="total()"> Su promedio es de: </button>
+                <p id="mostrarResultados"> </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
